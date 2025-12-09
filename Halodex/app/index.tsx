@@ -103,16 +103,17 @@ const USER = [
 export default function Index() {
   return (
     <SafeAreaView style={styles.container}>
-      <StatusBar barStyle='dark-content'/>
-      <Header/>
-      <TabBar/>
-      <FlatList 
-      data={USER}
-      keyExtractor={(item) => item.id}
-      contentContainerStyle={{ paddingVertical: 12}}
-      renderItem={({ item }) => <Chat item={item}/>}
+      <StatusBar barStyle="dark-content" />
+      <Header />
+      <TabBar />
+      <FlatList
+        data={USER}
+        keyExtractor={(item) => item.id}
+        contentContainerStyle={{ paddingVertical: 12 }}
+        renderItem={({ item }) => <Chat item={item} />}
+        showsVerticalScrollIndicator={false}
       />
-      <FloatingButton/>
+      <FloatingButton />
       <ExpoStatusBar style="auto" />
     </SafeAreaView>
   );
@@ -122,6 +123,6 @@ const styles = StyleSheet.create ({
   container: {
     flex: 1,
     backgroundColor: '#FFF',
-    paddingHorizontal: 18
+    paddingHorizontal: 8
   },
 })
