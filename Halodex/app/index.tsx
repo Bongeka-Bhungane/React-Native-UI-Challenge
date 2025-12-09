@@ -1,4 +1,4 @@
-import TabBar from "@/components/TabBar";
+import Avatar from "@/components/Avatar";
 import { Text, View } from "react-native";
 
 export default function Index() {
@@ -10,7 +10,7 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <TabBar/>
+      <Avatar/>
     </View>
   );
 }
