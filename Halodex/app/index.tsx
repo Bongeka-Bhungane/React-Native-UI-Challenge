@@ -1,4 +1,4 @@
-import Avatar from "@/components/Avatar";
+import Chat from "@/components/Chat";
 import { Text, View } from "react-native";
 
 export default function Index() {
@@ -10,7 +10,6 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <Avatar/>
     </View>
   );
 }
