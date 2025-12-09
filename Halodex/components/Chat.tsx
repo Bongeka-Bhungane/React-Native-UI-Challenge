@@ -3,20 +3,20 @@ import React from "react";
 import { Ionicons } from "@expo/vector-icons";
 import Avatar from "./Avatar";
 
-interface ChatItem {
-  name: string;
-  time: string;
-  avatar?: string;
-  message?: string;
-  typing?: boolean;
-  unread?: number;
-}
+// interface ChatItem {
+//   name: string;
+//   time: string;
+//   avatar?: string;
+//   message?: string;
+//   typing?: boolean;
+//   unread?: number;
+// }
 
-interface Props {
-  item: ChatItem;
-}
+// interface Props {
+//   item: ChatItem;
+// }
 
-export default function Chat({ item }: Props) {
+export default function Chat({ item }) {
   return (
     <Pressable
       style={({ pressed }) => [styles.container, pressed && { opacity: 0.8 }]}
